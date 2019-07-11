@@ -1,0 +1,11 @@
+*.74
+*.23
+*.zip
+*.weights
+
+*.o
+*.out
+*.so
+*.exe
+*.dll
+*.lib
