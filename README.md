@@ -25,19 +25,6 @@ conda install -c conda-forge scikit-image
 
 
 
-# How to Upload Results to Dropbox
-You'll need to follow the instructions to get an authentication key if you don't already have one.
-
-git clone https://github.com/andreafabrizi/Dropbox-Uploader.git
-cd Dropbox-Uploader/
-chmod +x dropbox_uploader.sh
-./dropbox_uploader.sh
-<need dropbox authentication key>
-
-/dropbox_uploader.sh upload src dest
-
-
-
 # Use with AlexeyAB Darknet
 
 git clone https://github.com/alexeyAB/darknet.git
@@ -51,64 +38,16 @@ cp video-40/config-darknet/* darknet
 
 
 
-# Other config and weights files configurations
 
+# How to Upload Results to Dropbox
+You'll need to follow the instructions to get an authentication key if you don't already have one.
 
+git clone https://github.com/andreafabrizi/Dropbox-Uploader.git
+cd Dropbox-Uploader/
+chmod +x dropbox_uploader.sh
+./dropbox_uploader.sh
+<need dropbox authentication key>
 
-
-
-
-
-
-
-
-
-
-
-
-    git log --oneline
-
-
-
-
-# How to use with ec2
-
-ssh ubuntu@13.236.3.140
-
-clone jctech-ml
-
-    git clone https://github.com/alexeyAB/darknet.git
-    cd jctech-ml
-
-clone darknet and make it
-
-    git clone https://github.com/AlexeyAB/darknet.git
-
-download this and put it in the bitwise dir
-
-    wget https://pjreddie.com/media/files/darknet19_448.conv.23
-    mv darknet19_448.conv.23 bitwise 
-
-put the bitwise directory in the darknet directory then run this from the darknet directory
-
-    cp -r bitwise darknet
-    cd darknet
-    ./darknet detector train bitwise/obj.data bitwise/yolo-obj.cfg bitwise/darknet19_448.conv.23
-
-
-
-# Other Stuff
-
-    sudo apt-get install eog scrot
-
-you can check on progress from another computer with
-gnome viewer tool eog
-
-    scp ubuntu@13.236.3.140:~/jctech-ml/darknet/chart.png chart.png; eog chart.png
-
-
-Taking screenshots easily is also good
-
-    scrot screenshot.png; eog screenshot.png
+/dropbox_uploader.sh upload src dest
 
 
