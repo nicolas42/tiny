@@ -51,3 +51,8 @@ chmod +x dropbox_uploader.sh
 /dropbox_uploader.sh upload src dest
 
 
+
+# Ivan Goncharov's Colab Stuff
+https://github.com/ivangrov/YOLOv3-GoogleColab/blob/master/YOLOv3_GoogleColab.ipynb
+
+
