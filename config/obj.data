@@ -1,5 +1,6 @@
 classes= 1  
-train  = tiny/train.txt  
-valid  = tiny/test.txt  
-names = tiny/obj.names  
+train  = data/train.txt  
+valid  = data/test.txt  
+names = data/obj.names  
 backup = backup
+eval=coco
